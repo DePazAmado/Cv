@@ -1,0 +1,195 @@
+/*
+Color Palette
+darkblue: 1d3557
+Blue: 457b9d
+Lightblue: a8dadc
+Almostwithe: f1faee
+Strongred: e63946
+Almostblack: 03071e
+*/
+
+
+/****************GENERAL STYLES *************************/
+
+html {
+    box-sixing: border-box;
+}
+
+*,
+*-before,
+*-after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #03071e;
+    margin: 0;
+    padding: 0;
+    /*almost black*/
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h1,
+h2 {
+    font-family: 'Lora', serif;
+    margin: 0;
+}
+
+img {
+    width: 300px;
+    border: 1px dashed #03071e;
+    border-radius: 10%;
+}
+
+img:hover {
+    opacity: 0.80;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    border-bottom-style: dotted;
+}
+
+
+/****************PROFILE SECTION *************************/
+
+header {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+
+/****************PROJECTS STYLES *************************/
+
+.project {
+    background-color: #f1faee;
+}
+
+.project-item {
+    overflow: hidden;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
+.project .btn {
+    color: #f1faee;
+    background: blue;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.project .btn:hover {
+    background: rgba(28, 53, 87, 90%);
+}
+
+h2 {
+    margin: 0;
+}
+
+.content-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+
+/****************WORK EXPERIENCE *************************/
+
+.workexp {
+    background-color: #a8dadc;
+}
+
+
+/****************EDUCATION *************************/
+
+.edu {
+    background-color: #f1faee;
+    background-image: url(../img/joanna-kosinska-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+}
+
+
+/* .edu img {
+    float: right;
+    margin-right: 20px;
+} */
+
+.edu h3 {
+    font-style: italic;
+}
+
+
+/****************CONTACT INFO *************************/
+
+footer {
+    background-color: #1d3557;
+    color: #f1faee;
+    border-bottom: 8px solid black;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-list a {
+    background-color: #a8dadc;
+    color: #03071e;
+    border: 1px solid #a8dadc;
+    border-radius: 10%;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+
+/************************ Media queries ******************/
+
+@media screen and (min-width: 750px) {
+    header,
+    footer {
+        text-align: center;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 10px;
+    }
+    .job-item {
+        display: grid;
+        grid-template-columns: 2fr 5fr;
+        column-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 27px;
+    }
+}
